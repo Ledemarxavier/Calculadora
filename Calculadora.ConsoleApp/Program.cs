@@ -27,7 +27,7 @@ namespace Calculadora.ConsoleApp
 
                 Console.Write("Escolha uma opção: ");
 
-                string opcao = Console.ReadLine()!;
+                string opcao = Console.ReadLine().ToUpper();
 
                 if (opcao == "S")
                     break;
@@ -131,6 +131,7 @@ namespace Calculadora.ConsoleApp
 
                 Console.Write("Deseja continuar? (S/N): ");
                 string opcaoContinuar = Console.ReadLine().ToUpper();
+
                 if (opcaoContinuar != "S")
                     break;
             }
